@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: fbelzunc
+Build-Jdk: 1.7.0_79
+Extension-Name: bitbucket
+Specification-Title: integrate Jenkins with BitBucket.
+Implementation-Title: bitbucket
+Implementation-Version: 1.1.5
+Group-Id: org.jenkins-ci.plugins
+Short-Name: bitbucket
+Long-Name: Jenkins Bitbucket Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/BitBucket+Plugin
+Plugin-Version: 1.1.5
+Hudson-Version: 1.580.1
+Jenkins-Version: 1.580.1
+Plugin-Dependencies: git:2.3.5,job-dsl:1.40;resolution:=optional,mercu
+ rial:1.54
+Plugin-Developers: 
+
