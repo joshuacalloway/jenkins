@@ -10,6 +10,7 @@ add https://updates.jenkins-ci.org/latest/jenkins.war /app/jenkins.war
 RUN mkdir /data
 workdir /app
 ADD .jenkins /root/.jenkins
+ENV BUILD_ID stayAlive2
 CMD BUILD_ID=stayAlive java -jar jenkins.war
 
 
