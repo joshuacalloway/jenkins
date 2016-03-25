@@ -11,6 +11,6 @@ RUN mkdir /data
 workdir /app
 ADD .jenkins /root/.jenkins
 ENV BUILD_ID stayAlive2
-CMD BUILD_ID=stayAlive java -jar jenkins.war
+CMD BUILD_ID=stayAlive java -Dhudson.util.ProcessTree.disable=true -jar jenkins.war
 
 
