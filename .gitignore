@@ -1,1 +1,6 @@
 .ssh/
+.jenkins/logs
+.jenkins/updates/
+.jenkins/userContent/
+.jenkins/war/
+.jenkinsJob/
