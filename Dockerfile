@@ -1,6 +1,14 @@
 from java:8
 
-copy .ssh /root/.ssh
+run mkdir -p /root/.ssh
+run cd /tmp && \
+            ssh-keygen -f id_rsa -t rsa -N '' && \
+            chmod 400 id_rsa
+RUN mv /tmp/id_rsa /root/.ssh/id_rsa
+RUN mv /tmp/id_rsa.pub /root/.ssh/id_rsa.pub
+
+run echo "please save this deployment key to your project on github or bitbucket"
+run cat /root/.ssh/id_rsa.pub
 RUN chmod 600 /root/.ssh/id_rsa
 RUN chmod 600 /root/.ssh/id_rsa.pub
 run mkdir /app
