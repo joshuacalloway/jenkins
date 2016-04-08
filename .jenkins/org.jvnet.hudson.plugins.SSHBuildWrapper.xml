@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jvnet.hudson.plugins.SSHBuildWrapper_-DescriptorImpl plugin="ssh@2.4">
+  <sites>
+    <org.jvnet.hudson.plugins.SSHSite>
+      <hostname>dev9.quikorder.net</hostname>
+      <port>22</port>
+      <username>ec2-user</username>
+      <password></password>
+      <keyfile>/root/.aws/dev9.pem</keyfile>
+      <serverAliveInterval>0</serverAliveInterval>
+      <pty>false</pty>
+    </org.jvnet.hudson.plugins.SSHSite>
+  </sites>
+</org.jvnet.hudson.plugins.SSHBuildWrapper_-DescriptorImpl>

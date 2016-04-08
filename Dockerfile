@@ -18,7 +18,7 @@ run apt-get update && apt-get install -y vim
 add https://updates.jenkins-ci.org/latest/jenkins.war /app/jenkins.war
 #copy jenkins.war /app/
 RUN mkdir /data
-cd /tmp && curl -O https://bootstrap.pypa.io/get-pip.py && python2.7 get-pip.py && pip install awscli
+run cd /tmp && curl -O https://bootstrap.pypa.io/get-pip.py && python2.7 get-pip.py && pip install awscli
 workdir /app
 ADD .jenkins /root/.jenkins
 
