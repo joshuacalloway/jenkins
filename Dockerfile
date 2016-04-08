@@ -18,10 +18,11 @@ run apt-get update && apt-get install -y vim
 add https://updates.jenkins-ci.org/latest/jenkins.war /app/jenkins.war
 #copy jenkins.war /app/
 RUN mkdir /data
+run cd /tmp && curl -O https://bootstrap.pypa.io/get-pip.py && pip install awscli
 workdir /app
 ADD .jenkins /root/.jenkins
-ENV BUILD_ID stayAlive2
+
+
 CMD BUILD_ID=stayAlive java -jar jenkins.war
-#CMD BUILD_ID=stayAlive java -Dhudson.util.ProcessTree.disable=true -jar jenkins.war
 
 
